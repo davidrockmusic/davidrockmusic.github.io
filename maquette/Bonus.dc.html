@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Bonus</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F1EBE0}a:hover{color:#FFFFFF}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #0F0E0D; color: #F1EBE0; font-family: 'Archivo', sans-serif">
+
+<div style="padding: 28px 16px 0">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.2em; color: #E9604A">LES COULISSES</div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 48px; line-height: 1; letter-spacing: 0.02em">BONUS</div>
+<div style="margin-top: 6px; font-size: 14px; color: #A39B8F">Inédits, maquettes et making-of. Soutiens au prix que tu veux.</div>
+</div>
+
+<div style="padding: 20px 16px 0">
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.04em">INÉDITS &amp; MAQUETTES</div>
+<div style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px">
+<sc-for list="{{tracks}}" as="t" hint-placeholder-count="3">
+<a href="Debloquer.dc.html" style="height: 56px; padding: 0 14px; border-radius: 10px; background: #1B1917; display: flex; align-items: center; gap: 12px; text-decoration: none">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E9604A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+<div style="flex: 1; min-width: 0">
+<div style="font-size: 15px; font-weight: 600">{{t.title}}</div>
+<div style="font-size: 12px; color: #A39B8F">{{t.kind}}</div>
+</div>
+<div style="font-size: 13px; font-weight: 600; color: #E9604A">Prix libre</div>
+</a>
+</sc-for>
+</div>
+</div>
+
+<div style="padding: 22px 16px 0">
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.04em">MAKING-OF</div>
+<div style="margin-top: 10px; display: flex; gap: 10px">
+<div style="width: 170px">
+<div style="width: 170px; height: 96px; background: #2A2622; display: flex; align-items: center; justify-content: center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="#F1EBE0"><path d="M8 5v14l11-7z"></path></svg>
+</div>
+<div style="margin-top: 6px; font-size: 13px; font-weight: 500">[En studio : titre]</div>
+</div>
+<div style="width: 170px">
+<div style="width: 170px; height: 96px; background: #2A2622; display: flex; align-items: center; justify-content: center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="#F1EBE0"><path d="M8 5v14l11-7z"></path></svg>
+</div>
+<div style="margin-top: 6px; font-size: 13px; font-weight: 500">[Tournage du clip]</div>
+</div>
+</div>
+</div>
+
+<div style="margin: 20px 16px 0; padding: 14px; border-radius: 10px; border: 1px solid #3A3631; display: flex; align-items: center; gap: 12px">
+<div style="flex: 1">
+<div style="font-size: 15px; font-weight: 600">Écrire à David</div>
+<div style="margin-top: 2px; font-size: 13px; color: #A39B8F">Un message, une question : il lit tout.</div>
+</div>
+<a href="#" style="height: 44px; padding: 0 16px; border-radius: 22px; background: #F1EBE0; color: #0F0E0D; display: flex; align-items: center; font-size: 14px; font-weight: 600; text-decoration: none">Écrire</a>
+</div>
+
+<nav style="position: absolute; left: 0; right: 0; bottom: 0; height: 68px; background: #0F0E0D; border-top: 1px solid #2C2925; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr))">
+<a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; color: #A39B8F">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>Accueil</a>
+<a href="Discographie.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; color: #A39B8F">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2"></circle></svg>Musique</a>
+<a href="Bonus.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; font-weight: 600; color: #F1EBE0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F1EBE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg>Bonus</a>
+<a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; color: #A39B8F">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg>Live</a>
+<a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; color: #A39B8F">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>Bio</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+tracks: [
+{ title: '[Titre inédit]', kind: 'Inédit' },
+{ title: '[Titre] — version maquette', kind: 'Maquette' },
+{ title: '[Titre] — guitare-voix', kind: 'Maquette' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

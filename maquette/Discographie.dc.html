@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Discographie</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F1EBE0}a:hover{color:#FFFFFF}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #0F0E0D; color: #F1EBE0; font-family: 'Archivo', sans-serif">
+
+<div style="padding: 28px 16px 8px">
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 48px; line-height: 1; letter-spacing: 0.02em">DISCOGRAPHIE</div>
+<div style="margin-top: 6px; font-size: 14px; color: #A39B8F">[N] titres · David Baechler</div>
+</div>
+
+<div style="padding: 8px 0 0">
+<sc-for list="{{songs}}" as="s" hint-placeholder-count="7">
+<div style="height: 72px; padding: 0 8px 0 16px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #1F1C1A">
+<div style="width: 52px; height: 52px; flex-shrink: 0; background: #2A2622; position: relative">
+<sc-if value="{{s.locked}}" hint-placeholder-val="{{false}}">
+<button aria-label="{{s.label}}" style="position: absolute; inset: 0; border: none; background: #151312; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="#F1EBE0"><path d="M8 5v14l11-7z"></path></svg>
+<div style="position: absolute; right: -4px; bottom: -4px; width: 20px; height: 20px; border-radius: 10px; background: #D2381F; display: flex; align-items: center; justify-content: center">
+<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+</div>
+</button>
+</sc-if>
+</div>
+<a href="{{s.href}}" style="flex: 1; min-width: 0; text-decoration: none">
+<div style="font-size: 16px; font-weight: 600; color: {{s.color}}">{{s.title}}</div>
+<div style="margin-top: 3px; font-size: 13px; color: {{s.metaColor}}">{{s.meta}}</div>
+</a>
+<sc-if value="{{s.locked}}" hint-placeholder-val="{{false}}">
+<a href="Debloquer.dc.html" style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1.5px solid #D2381F; display: flex; align-items: center; font-size: 13px; font-weight: 600; text-decoration: none; margin-right: 6px">Débloquer</a>
+</sc-if>
+<sc-if value="{{s.open}}" hint-placeholder-val="{{true}}">
+<button aria-label="{{s.label}}" style="width: 44px; height: 44px; border: none; background: transparent; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{s.active}}" hint-placeholder-val="{{false}}">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="#E9604A"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg>
+</sc-if>
+<sc-if value="{{s.idle}}" hint-placeholder-val="{{true}}">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="#F1EBE0"><path d="M8 5v14l11-7z"></path></svg>
+</sc-if>
+</button>
+</sc-if>
+</div>
+</sc-for>
+</div>
+
+<div style="position: absolute; left: 8px; right: 8px; bottom: 76px; height: 60px; background: #1F1C1A; border-radius: 10px; display: flex; align-items: center; gap: 12px; padding: 0 8px; box-sizing: border-box; overflow: hidden">
+<div style="width: 44px; height: 44px; background: #2A2622; flex-shrink: 0"></div>
+<a href="Lecteur.dc.html" style="flex: 1; min-width: 0; text-decoration: none">
+<div style="font-size: 14px; font-weight: 600">[Titre du single]</div>
+<div style="font-size: 12px; color: #A39B8F">David Baechler</div>
+</a>
+<button aria-label="Pause" style="width: 44px; height: 44px; border: none; background: transparent; display: flex; align-items: center; justify-content: center">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="#F1EBE0"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg>
+</button>
+<div style="position: absolute; left: 0; bottom: 0; height: 2px; width: 38%; background: #D2381F"></div>
+</div>
+
+<nav style="position: absolute; left: 0; right: 0; bottom: 0; height: 68px; background: #0F0E0D; border-top: 1px solid #2C2925; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
+<a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; color: #A39B8F">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>Accueil</a>
+<a href="Discographie.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; font-weight: 600; color: #F1EBE0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F1EBE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2"></circle></svg>Musique</a>
+<a href="Bio.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; font-size: 11px; color: #A39B8F">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>Bio</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+var titles = ['[Titre du single]', '[Titre 2]', '[Titre 3]', '[Titre 4]', '[Titre 5]', '[Titre exclusif 1]', '[Titre exclusif 2]'];
+var songs = titles.map(function (t, i) {
+var active = i === 0;
+var locked = i >= 5;
+return {
+title: t,
+meta: locked ? 'Extrait · exclusif' : '[Année] · [durée]',
+metaColor: locked ? '#E9604A' : '#A39B8F',
+locked: locked,
+open: !locked,
+active: active,
+idle: !active,
+href: locked ? 'Debloquer.dc.html' : 'Lecteur.dc.html',
+color: active ? '#E9604A' : '#F1EBE0',
+label: locked ? 'Écouter l’extrait de ' + t : (active ? 'Pause ' + t : 'Écouter ' + t)
+};
+});
+return { songs: songs };
+}
+}
+</script>
+</body>
+</html>

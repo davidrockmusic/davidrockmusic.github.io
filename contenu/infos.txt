@@ -1,0 +1,50 @@
+INFOS POUR L'APP DAVID BAECHLER
+Remplis chaque champ. Laisse vide ce qui ne s'applique pas.
+
+=== GÉNÉRAL ===
+Adresse du site prévue :
+E-mail de contact (adresse dédiée) :
+Phrase du bandeau d'installation : Garde ma musique sur ton téléphone, comme une vraie app. Gratuit, sans compte.
+Titre mis en avant sur l'accueil :
+
+=== BIO ===
+(quelques lignes)
+
+
+=== RÉSEAUX ===
+TikTok :
+Instagram :
+YouTube :
+Spotify :
+Facebook :
+
+=== TITRES ===
+(copie ce bloc pour chaque titre ; le nom du fichier doit être le même pour le MP3 et la pochette)
+
+Titre :
+Fichier (sans extension) :
+Année :
+Description courte :
+Crédits :
+Lien Spotify :
+Lien YouTube :
+Exclusif (oui/non) : non
+Début de l'extrait (exclusifs seulement, ex. 0:45) :
+Paroles :
+
+
+---
+
+Titre :
+Fichier (sans extension) :
+Année :
+Description courte :
+Crédits :
+Lien Spotify :
+Lien YouTube :
+Exclusif (oui/non) : oui
+Début de l'extrait (exclusifs seulement, ex. 0:45) :
+Paroles :
+
+
+---

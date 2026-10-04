@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Installer l'app</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F1EBE0}a:hover{color:#FFFFFF}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #060505; color: #F1EBE0; font-family: 'Archivo', sans-serif">
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 660px; background: #1B1917; border-radius: 20px 20px 0 0; padding: 12px 20px 28px; box-sizing: border-box; display: flex; flex-direction: column">
+<div style="align-self: center; width: 40px; height: 4px; border-radius: 2px; background: #3A3631"></div>
+
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 14px">
+<div style="width: 60px; height: 60px; border-radius: 14px; background: #D2381F; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 26px; color: #FFFFFF">DB</div>
+<div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 30px; line-height: 1">INSTALLER L'APP DAVID</div>
+<div style="margin-top: 4px; font-size: 14px; color: #A39B8F">Sur ton écran d'accueil, en 4 gestes</div>
+</div>
+</div>
+
+<div style="margin-top: 20px; padding: 14px; border-radius: 10px; background: #2A1B17; border: 1px solid #5A2A20; font-size: 14px; line-height: 1.45">
+<strong style="color: #F28B78">Tu es dans TikTok ou Instagram ?</strong><br>Touche « … » en haut à droite, puis « Ouvrir dans le navigateur ». L'installation ne marche que depuis Safari.
+</div>
+
+<div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{steps}}" as="st" hint-placeholder-count="4">
+<div style="min-height: 60px; padding: 0 14px; border-radius: 10px; background: #252220; display: flex; align-items: center; gap: 14px">
+<div style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 16px; background: #0F0E0D; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px">{{st.n}}</div>
+<div style="flex: 1; font-size: 15px; line-height: 1.35">{{st.text}}</div>
+</div>
+</sc-for>
+</div>
+
+<div style="margin-top: 14px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; color: #A39B8F">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A39B8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M8 7l4-4 4 4"></path><path d="M6 11v9h12v-9"></path></svg>
+Le bouton Partager ressemble à ça
+</div>
+
+<a href="Main.dc.html" style="margin-top: auto; height: 52px; border-radius: 26px; background: #F1EBE0; color: #0F0E0D; font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 16px; display: flex; align-items: center; justify-content: center; text-decoration: none">J'ai compris</a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+steps: [
+{ n: '1', text: 'Touche le bouton Partager de Safari' },
+{ n: '2', text: 'Choisis « Sur l’écran d’accueil »' },
+{ n: '3', text: 'Active « Ouvrir comme app web » si proposé' },
+{ n: '4', text: 'Touche « Ajouter »' }
+]
+};
+}
+}
+</script>
+</body>
+</html>
